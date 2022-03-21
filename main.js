@@ -32,7 +32,7 @@
 let sceltaUtente = prompt("Scegli se pari o dispari")
 
 let numeroUtente = parseInt(prompt("inserisci un numero da 1 a 5"))
-console.log(numeroUtente)
+console.log(`Il numero scelto dall'utente è ${numeroUtente}`)
 
 let min = 1;
 let max = 5;
@@ -47,7 +47,7 @@ function numeroComputer(min, max) {
 console.log(`Il numero scelto da pc è ${numeroComputer(min, max)}`)
 
 let somma = numeroUtente + numeroPc;
-console.log(somma)
+console.log(`La somma dei due numeri è ${somma}`)
 
 function parioDispari (somma){
     if (somma % 2 == 0){
@@ -57,7 +57,7 @@ function parioDispari (somma){
     }
 }
 
-console.log(parioDispari (somma))
+console.log(`La somma dei due numeri è ${parioDispari (somma)}`)
 
 if (parioDispari (somma) == "pari" && sceltaUtente == "pari"){
     console.log(`${somma} è pari e vince il giocatore avendo scelto ${sceltaUtente} `)
